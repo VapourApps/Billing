@@ -5,10 +5,12 @@ Installation:
 
 ```bash
 #1. Install curl and git
-sudo apt-get install -y curl git
+apt-get install -y curl git
 
-#2. Install nodejs and npm 
-sudo apt-get install -y nodejs npm
+#2. Install nodejs and npm
+apt-get install software-properties-common
+curl -sL https://deb.nodesource.com/setup_12.x | bash -
+apt-get install -y nodejs npm
 
 #3. Clone the repo 
 git clone https://github.com/VapourApps/billing_frontend.git
